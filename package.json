@@ -1,0 +1,26 @@
+{
+  "name": "Weather-Now",
+  "version": "1.0.0",
+  "description": "Frontend web application that provides information about the current weather of a city, such as temperature, humidity and wind speed. Using the Weather API of OpenWeather .",
+  "main": "index.js",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/0-Arngerdur-1/Weather-Now.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/0-Arngerdur-1/Weather-Now/issues"
+  },
+  "homepage": "https://github.com/0-Arngerdur-1/Weather-Now#readme",
+  "dependencies": {
+    "css-loader": "^5.0.1",
+    "html-webpack-plugin": "^4.5.0",
+    "style-loader": "^2.0.0",
+    "webpack": "^5.10.0",
+    "webpack-cli": "^4.2.0",
+    "webpack-dev-server": "^3.11.0"
+  }
+}

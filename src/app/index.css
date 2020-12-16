@@ -1,0 +1,101 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  font-family: "Nunito", sans-serif;
+  font-weight: normal;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  /* background-color: #eec0c6; */
+  /* background-image: linear-gradient(315deg, #eec0c6 0%, #7ee8fa 74%); */
+  background: #d0e4f5 url("https://wallpapercave.com/wp/wp2895257.png")
+    no-repeat scroll -50px -5px;
+}
+
+input[type="text"] {
+  width: 100%;
+}
+
+legend {
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
+button {
+  cursor: pointer;
+  display: inline-block;
+  padding: 0.75rem 1.25rem;
+  border-radius: 10rem;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 1rem;
+  letter-spacing: 0.15rem;
+  transition: all 0.3s;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+button:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #0cf;
+  border-radius: 10rem;
+  z-index: -2;
+}
+button:before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0%;
+  height: 100%;
+  background-color: darken(#0cf, 15%);
+  transition: all 0.3s;
+  border-radius: 10rem;
+  z-index: -1;
+}
+
+button:hover {
+  color: #000;
+  background: rgb(63, 94, 251);
+  background: radial-gradient(
+    circle,
+    rgba(63, 94, 251, 1) 18%,
+    rgba(252, 70, 70, 0.41358541707698704) 91%
+  );
+}
+
+.cards {
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  min-height: 100vh;
+  grid-template-columns: 40%;
+  grid-template-rows: minmax(110px, auto) repeat(2, 110px);
+}
+
+@media (max-width: 700px) {
+  .cards {
+    grid-template-columns: 90%;
+  }
+}
+
+.card-body {
+  text-align: center;
+  text-justify: inter-word;
+  border: 13px rgba(255, 105, 98, 0.7) double;
+  -webkit-box-shadow: 5px 5px 5px 0px #000000, inset 4px 4px 15px 0px #000000,
+    5px 5px 15px 5px rgba(0, 0, 0, 0);
+  box-shadow: 5px 5px 5px 0px #000000, inset 4px 4px 15px 0px #000000,
+    5px 5px 15px 5px rgba(0, 0, 0, 0);
+  background-color: rgba(244, 116, 33, 0.25);
+  backdrop-filter: blur(5px);
+}
