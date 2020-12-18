@@ -17,6 +17,10 @@ body {
 
 input[type="text"] {
   width: 100%;
+  border: 0;
+  border-bottom: 1px solid brown;
+  background-color: transparent;
+  font-size: 1.1rem;
 }
 
 legend {
@@ -64,13 +68,17 @@ button:before {
 }
 
 button:hover {
-  color: #000;
+  color: #73e977;
   background: rgb(63, 94, 251);
   background: radial-gradient(
     circle,
     rgba(63, 94, 251, 1) 18%,
     rgba(252, 70, 70, 0.41358541707698704) 91%
   );
+}
+
+fieldset {
+  font-size: 1.2rem;
 }
 
 .cards {
@@ -92,10 +100,15 @@ button:hover {
   text-align: center;
   text-justify: inter-word;
   border: 13px rgba(255, 105, 98, 0.7) double;
+  border-radius: 25px;
   -webkit-box-shadow: 5px 5px 5px 0px #000000, inset 4px 4px 15px 0px #000000,
     5px 5px 15px 5px rgba(0, 0, 0, 0);
   box-shadow: 5px 5px 5px 0px #000000, inset 4px 4px 15px 0px #000000,
     5px 5px 15px 5px rgba(0, 0, 0, 0);
   background-color: rgba(244, 116, 33, 0.25);
   backdrop-filter: blur(5px);
+}
+
+#weather-location {
+  color: #17469e;
 }
