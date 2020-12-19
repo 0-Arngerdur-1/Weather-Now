@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather Now</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="app/index.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="cards">
+        <div class="card">
+          <div class="card-body">
+            <h1 id="weather-location">location</h1>
+            <h3 id="weather-information">w-information</h3>
+            <h3 id="weather-string">temperature</h3>
+            <ul class="list-group">
+              <li id="weather-humidity" class="list-group-item">Humidity</li>
+              <li id="weather-wind" class="list-group-item">wind</li>
+              <li id="weather-pressure" class="list-group-item">pressure</li>
+              <li class="weather-visibility" id="list-group-item">
+                visibility
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-body">
+            <form id="w-form">
+              <section>
+                <fieldset>
+                  <legend>Place information</legend>
+                  <p>
+                    <label for="city">City:</label>
+                    <input
+                      id="city"
+                      type="text"
+                      class="form-control"
+                      placeholder="A city"
+                      autofocus
+                    />
+                  </p>
+                  <p>
+                    <label for="country-code">Country:</label>
+                    <input
+                      id="country-code"
+                      type="text"
+                      placeholder="Country code"
+                    />
+                  </p>
+                  <p>
+                    <button id="submit-button">Request weather</button>
+                  </p>
+                </fieldset>
+              </section>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  <script src="bundle.js"></script></body>
+</html>
