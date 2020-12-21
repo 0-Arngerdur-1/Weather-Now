@@ -4,7 +4,6 @@
   box-sizing: border-box;
   font-family: 'Nunito', sans-serif;
   font-weight: normal;
-  list-style: none;
 }
 
 body {
@@ -84,6 +83,16 @@ fieldset {
 
 h3 {
   margin: 0px 0px;
+}
+
+h3:first-letter {
+  text-transform: uppercase;
+}
+
+table {
+  text-align: center;
+  justify-content: center;
+  margin: 0 auto;
 }
 
 .cards {

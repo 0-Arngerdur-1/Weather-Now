@@ -15,11 +15,11 @@ export default class UI {
     this.location.innerText = `${weatherData.name} / ${weatherData.sys.country}`;
     this.information.innerText = `${weatherData.weather[0].description}`;
     this.temp.innerText = `${weatherData.main.temp}°C`;
-    this.feelsLike.innerText = `Feels like ${weatherData.main.feels_like}°C`;
-    this.humidity.innerText = `Humidity: ${weatherData.main.humidity}%`;
-    this.wind.innerText = `Wind speed: ${weatherData.wind.speed}m/s`;
-    this.pressure.innerText = `Pressure: ${weatherData.main.pressure}hPa`;
-    this.visibility.innerText = `Visibility: ${
+    this.feelsLike.innerText = `${weatherData.main.feels_like}°C`;
+    this.humidity.innerText = `${weatherData.main.humidity}%`;
+    this.wind.innerText = `${weatherData.wind.speed}m/s`;
+    this.pressure.innerText = `${weatherData.main.pressure}hPa`;
+    this.visibility.innerText = `${
       parseFloat(weatherData.visibility) / 1000
     }Km`;
   }
