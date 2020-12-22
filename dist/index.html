@@ -9,24 +9,31 @@
       href="https://fonts.googleapis.com/css2?family=Nunito:wght@600&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="app/index.css" />
+    <link rel="stylesheet" href="./app/index.css" />
   </head>
   <body>
     <div class="container">
       <div class="cards">
         <div class="card">
           <div class="card-body">
-            <h1 id="weather-location">location</h1>
-            <h3 id="weather-information">w-information</h3>
-            <h3 id="weather-string">temperature</h3>
-            <ul class="list-group">
-              <li id="weather-humidity" class="list-group-item">Humidity</li>
-              <li id="weather-wind" class="list-group-item">wind</li>
-              <li id="weather-pressure" class="list-group-item">pressure</li>
-              <li class="weather-visibility" id="list-group-item">
-                visibility
-              </li>
-            </ul>
+            <h1 id="weather-location"></h1>
+            <h3 id="weather-information">w-</h3>
+            <h3 id="weather-temp"></h3>
+            <h3 id="weather-feels-like">like</h3>
+            <table class="weather-info">
+              <tr>
+                <th>Humidity</th>
+                <th>Wind</th>
+                <th>Pressure</th>
+                <th>Visibility</th>
+              </tr>
+              <tr>
+                <td id="weather-humidity" class="list-group-item"></td>
+                <td id="weather-wind" class="list-group-item"></td>
+                <td id="weather-pressure" class="list-group-item"></td>
+                <td id="weather-visibility" class="list-group-item"></td>
+              </tr>
+            </table>
           </div>
         </div>
         <div class="card">

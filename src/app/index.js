@@ -11,14 +11,12 @@ const weather = new Weather(city, countryCode);
 async function fetchWeather() {
   const weatherResponse = await weather.getWeather();
   const weatherData = await weatherResponse.json();
-  console.log(weatherData);
   ui.render(weatherData);
 }
 
 document.querySelector('#submit-button').addEventListener('click', (e) => {
   const cityValue = document.querySelector('#city').value;
   const countryCodeValue = document.querySelector('#country-code').value;
-  console.log(cityValue, countryCodeValue);
   e.preventDefault();
   weather.changeLocation(cityValue, countryCodeValue);
   store.setLocationData(cityValue, countryCodeValue);
