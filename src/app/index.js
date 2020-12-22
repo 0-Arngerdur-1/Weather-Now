@@ -1,9 +1,12 @@
 import './index.css';
 import Weather from './Weather';
 import UI from './UI';
+import Store from './Store';
 
-const weather = new Weather('London', 'uk');
 const ui = new UI();
+const store = new Store();
+const { city, countryCode } = store.getLocationData();
+const weather = new Weather(city, countryCode);
 
 async function fetchWeather() {
   const weatherResponse = await weather.getWeather();
@@ -13,11 +16,12 @@ async function fetchWeather() {
 }
 
 document.querySelector('#submit-button').addEventListener('click', (e) => {
-  const city = document.querySelector('#city').value;
-  const countryCode = document.querySelector('#country-code').value;
-  console.log(city, countryCode);
+  const cityValue = document.querySelector('#city').value;
+  const countryCodeValue = document.querySelector('#country-code').value;
+  console.log(cityValue, countryCodeValue);
   e.preventDefault();
-  weather.changeLocation(city, countryCode);
+  weather.changeLocation(cityValue, countryCodeValue);
+  store.setLocationData(cityValue, countryCodeValue);
   fetchWeather();
 });
 
