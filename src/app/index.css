@@ -43,7 +43,7 @@ button {
   overflow: hidden;
   z-index: 1;
 }
-button:after {
+button::after {
   content: '';
   position: absolute;
   bottom: 0;
@@ -54,7 +54,7 @@ button:after {
   border-radius: 10rem;
   z-index: -2;
 }
-button:before {
+button::before {
   content: '';
   position: absolute;
   bottom: 0;
@@ -67,7 +67,7 @@ button:before {
   z-index: -1;
 }
 
-button:hover {
+button::hover {
   color: #73e977;
   background: rgb(63, 94, 251);
   background: radial-gradient(
@@ -86,21 +86,21 @@ h3 {
   font-size: 1.4rem;
 }
 
-h3:first-letter {
+h3::first-letter {
   text-transform: uppercase;
 }
 
-table {
-  table-layout: fixed;
-  text-align: center;
+.weather-info {
+  display: grid;
   justify-content: center;
-  margin: 0 auto;
+  align-content: center;
+  grid-template-columns: repeat(2, auto);
+  column-gap: 20px;
   font-size: 1.3rem;
+  outline: none;
 }
 
-tr th {
-  padding-left: 20px;
-  padding-right: 20px;
+.header {
   background-color: rgba(0, 0, 0, 0.2);
   color: rgba(4, 2, 53, 1);
 }

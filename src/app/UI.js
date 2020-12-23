@@ -24,7 +24,7 @@ export default class UI {
 
     this.wind.innerText = `${weatherData.wind.speed}m/s`;
 
-    this.pressure.innerText = `${weatherData.main.pressure}hPa`;
+    this.pressure.innerText = `  ${weatherData.main.pressure}hPa`;
 
     this.visibility.innerText = `${
       parseFloat(weatherData.visibility) / 1000
